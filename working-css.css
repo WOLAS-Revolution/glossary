@@ -35,3 +35,8 @@
 .gloss-item:nth-child(even){
     background-color: #d2e2f2;
 }
+
+.gloss{
+    border: 1px solid #d2e2f2;
+    margin: 10px;
+}

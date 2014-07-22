@@ -22,3 +22,16 @@
     background-color: #3677b5;
     color: #FFF;
 }
+
+.gloss-item{
+    display: block;
+    padding: 0.5em;
+}
+
+.gloss-item:nth-child(odd){
+    background-color: #f4f4f4;
+}
+
+.gloss-item:nth-child(even){
+    background-color: #d2e2f2;
+}

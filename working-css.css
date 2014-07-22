@@ -33,10 +33,15 @@
 }
 
 .gloss-item:nth-child(even){
-    background-color: #d2e2f2;
+    background-color: #e1ecf7;
 }
 
 .gloss{
     border: 1px solid #d2e2f2;
     margin: 10px;
+}
+
+#gloss-ic{
+    background-color: #d2e2f2;
+    position: relative;
 }

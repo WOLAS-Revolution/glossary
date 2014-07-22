@@ -5,16 +5,23 @@
     <title>Glossary</title>
     <link rel="stylesheet" href="https://d1ldb0f4tbur5g.cloudfront.net/css/wolascss/0.0.20/css/screen.css" type="text/css" />
     <link rel="stylesheet" href="working-css.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if  ($(window).scrollTop() >= 200){
+                 $('#gloss-ic').css({position:'fixed !important',top:0});
+            } else {
+                 $('#gloss-ic').css({position:'relative'});
+                }
+        });
+    </script>
 </head>
 
 <body>
     <div class="jumbo">
         <h1>Glossary</h1>
     </div>
-    <div class="c-outer compact">
-        <div class="c-title">
-            <p>Index</p>
-        </div>
+    <div class="c-outer compact" id="gloss-ic">
         <div id="gloss-index" class="c-inner">
             <ul>
                 <li><a href=#A>A</a></li>
@@ -52,10 +59,16 @@
         </div>
         <div class="c-inner, gloss">
             <div class="gloss-item">
-                <p>to come</p>
+                <h1>Accompaniment</h1>
+                <p>A food item served with the main component of the meal to provide balance to the dish.</p>
             </div>
             <div class="gloss-item">
-                <p>to come 2</p>
+                <h1>Aeration</h1>
+                <p>Aeration is the process of incorporating air into a food item.</p>
+            </div>
+            <div class="gloss-item">
+                <h1>Alternate drop</h1>
+                <p>Two or three different dishes are served alternatively around the table. Guests don't specifically order their dish, but are free to swap with their neighbour if they wish.</p>
             </div>
         </div>
     </div>

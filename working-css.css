@@ -1,0 +1,24 @@
+#gloss-index ul{
+    margin: 0 auto;
+    max-width: 75em;
+    text-align: center;
+}
+
+#gloss-index li{
+    list-style-type: none !important;
+    float: left;
+    margin: auto 0.5em;
+    padding-bottom: 1em;
+}
+
+#gloss-index li a{
+    display: block;
+    border: 1px solid #3677b5;
+    background-color: #FFF;
+    padding: 0.5em;
+}
+
+#gloss-index li a:hover{
+    background-color: #3677b5;
+    color: #FFF;
+}

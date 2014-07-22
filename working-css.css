@@ -45,3 +45,24 @@
     background-color: #d2e2f2;
     position: relative;
 }
+
+.seealso{
+    border-top: 1px solid #3677b5;
+    color: #3677b5 !important;
+    padding-bottom: 20px;
+}
+
+.seealso li{
+    list-style-type: none;
+    float: left;
+    display: block;
+    margin: -5px 5px 0px 0px;    
+}
+
+.seealso li:after{
+    content: " |";
+}
+
+.seealso li:last-child:after{
+    content: "" !important;
+}

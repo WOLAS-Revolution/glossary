@@ -12,6 +12,22 @@
             $("#sticker").sticky({ topSpacing: 0, center:true, className:"hey" });
         });
     </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+    });
+    </script>
 </head>
 
 
@@ -1430,11 +1446,6 @@
                 <div class="gloss-item">
                     <a name="Stock" class="tanker"></a>
                     <h1>Stock</h1>
-                    <p>Any item in your establishment's inventory.</p>
-                </div>
-                <div class="gloss-item">
-                    <a name="Stock-ingredient" class="tanker"></a>
-                    <h1>Stock (ingredient)</h1>
                     <p>A flavoured liquid that can be used as a foundation for many sauces, soups, and wet dishes.</p>
                     <div class="seealso">
                         <h4>See also</h4>
@@ -1443,6 +1454,11 @@
                             <li><a href="#Soup">Soup</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Stock-inventory" class="tanker"></a>
+                    <h1>Stock (inventory)</h1>
+                    <p>Any item in your establishment's inventory.</p>
                 </div>
                 <div class="gloss-item">
                     <a name="Stock-rotation" class="tanker"></a>
@@ -1512,7 +1528,94 @@
             </div>
             <div class="c-inner, gloss">
                 <div class="gloss-item">
-                    <p>to come</p>
+                    <a name="Table-service" class="tanker"></a>
+                    <h1>Table service</h1>
+                    <p>A service style where the customer's order is taken from where they are seated and brought to them.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Order">Order</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Tempering-chocolate" class="tanker"></a>
+                    <h1>Tempering (chocolate)</h1>
+                    <p>To stabilise chocolate by precise temperature manipulation, giving it a glossy finish and distinctive snap.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Chocolate">Chocolate</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Tempering-eggs" class="tanker"></a>
+                    <h1>Tempering (eggs)</h1>
+                    <p>To gently heat egg yolks before adding to a hot liquid by adding a small bit of the sauce and whisking well. This technique prevents curdling.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Egg">Egg</a></li>
+                            <li><a href="#Sauce">Sauce</a></li>
+                            <li><a href="#Whisking">Whisking</a></li>
+                            <li><a href="#Curdling">Curdling</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Thawing" class="tanker"></a>
+                    <h1>Thawing</h1>
+                    <p>To unfreeze an item with gradual warming.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Toxin" class="tanker"></a>
+                    <h1>Toxin</h1>
+                    <p>A substance that is harmful or can cause illness if mishandled or consumed. Many chemicals are toxins. Toxins may also be produced by pathogens.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Pathogen">Pathogen</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Trans-fat" class="tanker"></a>
+                    <h1>Trans-fat</h1>
+                    <p>Liquid oils that have been chemically altered to make them solid at room temperature.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Trimming" class="tanker"></a>
+                    <h1>Trimming</h1>
+                    <p>Trimming is the process of using a knife to remove excess fat, skin, sinew, or cartilage from a cut of meat.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Sinew">Sinew</a></li>
+                            <li><a href="#Cartilage">Cartilage</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Trivet" class="tanker"></a>
+                    <h1>Trivet</h1>
+                    <p>An ornamental stand placed under a hot dish to protect the surface under it. OR A rack used in a roasting pan to lift food items off the bottom of the pan to allow better convective heat transfer.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Trussing" class="tanker"></a>
+                    <h1>Trussing</h1>
+                    <p>To tie food with string to keep in place and hold shape.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Turning" class="tanker"></a>
+                    <h1>Turning</h1>
+                    <p>A kind of cut: Cutting vegetables into seven-faced barrels, various sizes.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Vegetable">Vegetable</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1524,7 +1627,9 @@
             </div>
             <div class="c-inner, gloss">
                 <div class="gloss-item">
-                    <p>to come</p>
+                    <a name="Unsaturated-fat" class="tanker"></a>
+                    <h1>Unsaturated fat</h1>
+                    <p>The healthiest kind of oil. Unsaturated fats are most commonly found in vegetable products.</p>
                 </div>
             </div>
         </div>
@@ -1536,7 +1641,55 @@
             </div>
             <div class="c-inner, gloss">
                 <div class="gloss-item">
-                    <p>to come</p>
+                    <a name="Vegan" class="tanker"></a>
+                    <h1>Vegan</h1>
+                    <p>A person that does not consume any animal products, including dairy, eggs, and gelatin.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Dairy">Dairy</a></li>
+                            <li><a href="#Egg">Egg</a></li>
+                            <li><a href="#Gelatin">Gelatin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Vegetable" class="tanker"></a>
+                    <h1>Vegetable</h1>
+                    <p>A plant or part of a plant used as food.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Vegetarian" class="tanker"></a>
+                    <h1>Vegetarian</h1>
+                    <p>A person that does not consume any meat.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Meat">Meat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Vitamin" class="tanker"></a>
+                    <h1>Vitamin</h1>
+                    <p>A chemical micro-nutrient that is needed for the body to function correctly.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Micro-nutrient">Micro-nutrient</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Vol-au-vent" class="tanker"></a>
+                    <h1>Vol-au-vent</h1>
+                    <p>A small hollow case of puff pastry.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Pastry">Pastry</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1548,7 +1701,21 @@
             </div>
             <div class="c-inner, gloss">
                 <div class="gloss-item">
-                    <p>to come</p>
+                    <a name="Waste" class="tanker"></a>
+                    <h1>Waste</h1>
+                    <p>Any product that is disposed of. A lot of waste can be minimised by utilising scraps, repurposing stock, and practicing proper stock rotation procedures.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Stock-inventory">Stock (inventory)</a></li>
+                            <li><a href="#Stock-rotation">Stock rotation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Whisking" class="tanker"></a>
+                    <h1>Whisking</h1>
+                    <p>Incorporating air into liquids by beating them with a whisk.</p>
                 </div>
             </div>
         </div>
@@ -1560,7 +1727,7 @@
             </div>
             <div class="c-inner, gloss">
                 <div class="gloss-item">
-                    <p>to come</p>
+                    <p>No entries.</p>
                 </div>
             </div>
         </div>
@@ -1572,7 +1739,33 @@
             </div>
             <div class="c-inner, gloss">
                 <div class="gloss-item">
-                    <p>to come</p>
+                    <a name="Yeast" class="tanker"></a>
+                    <h1>Yeast</h1>
+                    <p>A micro-organism. As yeast feeds on sugars, it produces carbon dioxide, making it useful in leavening many doughs.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Microorganism">Microorganism</a></li>
+                            <li><a href="#Leavening">Leavening</a></li>
+                            <li><a href="#Dough">Dough</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Yield" class="tanker"></a>
+                    <h1>Yield</h1>
+                    <p>The amount of usable product from a yield test.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Yield-test">Yield test</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Yield-test" class="tanker"></a>
+                    <h1>Yield test</h1>
+                    <p>A process used to work out the percentage of waste when preparing a food item or ingredient.</p>
                 </div>
             </div>
         </div>
@@ -1584,7 +1777,7 @@
             </div>
             <div class="c-inner, gloss">
                 <div class="gloss-item">
-                    <p>to come</p>
+                    <p>No entries.</p>
                 </div>
             </div>
         </div>

@@ -66,6 +66,11 @@
     padding-bottom: 20px;
 }
 
+.seealso ul{
+    margin: 10px 0 -8px 0 !important;
+    overflow: hidden;
+}
+
 .seealso li{
     list-style-type: none;
     float: left;
@@ -100,6 +105,7 @@ a.abcd, a.tanker{
     background-color: #3677b5;
     padding: 10px;
     border-radius: 0 0 5px 5px;
+    right: 0;
 }
 
 #gindex-tab h4{
@@ -147,12 +153,16 @@ a.abcd, a.tanker{
         margin-top: 0;
     }
     
+    a.tanker{
+        top: -22px !important;
+    }
+    
 }
 
 
 @media all and (max-width: 592px) and (min-width: 407px) {
     
-    a.abcd, a.tanker{
+    a.abcd{
         top: -190px !important;
     }
     
@@ -160,7 +170,7 @@ a.abcd, a.tanker{
 
 @media all and (max-width: 406px) {
     
-    a.abcd, a.tanker{
+    a.abcd{
         top: -245px !important;
     }
     

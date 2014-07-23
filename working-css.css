@@ -1,6 +1,10 @@
+#gloss-index{
+    background-color: transparent !important;
+}
+
 #gloss-index ul{
     margin: 0 auto;
-    max-width: 75em;
+    max-width: 77em;
     text-align: center;
 }
 
@@ -33,7 +37,7 @@
 }
 
 .gloss-item:nth-child(even){
-    background-color: #e1ecf7;
+    background-color: #ffffff;
 }
 
 .gloss{
@@ -43,7 +47,13 @@
 
 #gloss-ic{
     background-color: #d2e2f2;
-    position: relative;
+    position: absolute;
+}
+
+#sticker {
+    z-index: 1;
+    width: 100%;
+    margin-top: -10px;
 }
 
 .seealso{
@@ -65,4 +75,41 @@
 
 .seealso li:last-child:after{
     content: "" !important;
+}
+
+a.abcd{
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+.gloss-content{
+    margin-top: 10em;
+}
+
+
+@media all and (max-width: 1105px) and (min-width: 579px) {
+    
+    a.abcd{
+        top: -135px !important;
+    }
+    
+}
+
+
+@media all and (max-width: 578px) and (min-width: 407px) {
+    
+    a.abcd{
+        top: -190px !important;
+    }
+    
+}
+
+@media all and (max-width: 406px) {
+    
+    a.abcd{
+        top: -245px !important;
+    }
+    
 }

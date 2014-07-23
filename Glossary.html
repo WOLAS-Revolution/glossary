@@ -5,23 +5,26 @@
     <title>Glossary</title>
     <link rel="stylesheet" href="https://d1ldb0f4tbur5g.cloudfront.net/css/wolascss/0.0.20/css/screen.css" type="text/css" />
     <link rel="stylesheet" href="working-css.css" type="text/css" />
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.sticky.js"></script>
     <script>
-        $(window).scroll(function(){
-            if  ($(window).scrollTop() >= 200){
-                 $('#gloss-ic').css({position:'fixed !important',top:0});
-            } else {
-                 $('#gloss-ic').css({position:'relative'});
-                }
+        $(window).load(function(){
+            $("#sticker").sticky({ topSpacing: 0, center:true, className:"hey" });
         });
     </script>
 </head>
 
+
+
 <body>
+    <a name="top"></a>
     <div class="jumbo">
         <h1>Glossary</h1>
     </div>
-    <div class="c-outer compact" id="gloss-ic">
+    
+    
+    <div id="sticker">
+	<div class="c-outer compact" id="gloss-ic">
         <div id="gloss-index" class="c-inner">
             <ul>
                 <li><a href=#A>A</a></li>
@@ -50,439 +53,597 @@
                 <li><a href=#X>X</a></li>
                 <li><a href=#Y>Y</a></li>
                 <li><a href=#Z>Z</a></li>
+                <li><a href=#top>TOP</a></li>
             </ul>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="A">A</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <a name="Accompaniment"><h1>Accompaniment</h1></a>
-                <p>A food item served with the main component of the meal to provide balance to the dish.</p>
-            </div>
-            <div class="gloss-item">
-                <a name="Aeration"><h1>Aeration</h1></a>
-                <p>Aeration is the process of incorporating air into a food item.</p>
-            </div>
-            <div class="gloss-item">
-                <a name="Alternate-drop"><h1>Alternate drop</h1></a>
-                <p>Two or three different dishes are served alternatively around the table. Guests don't specifically order their dish, but are free to swap with their neighbour if they wish.</p>
-            </div>
         </div>
     </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="B">B</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <a name="Baking"><h1>Baking</h1></a>
-                <p>Baking is the process of heating food with hot air, but without the addition of oils.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Oil">Oil</a></li>
-                    </ul>
+        
+    <div class="gloss-content">    
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="A" class="abcd"></a>
+                <h4>A</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <a name="Accompaniment"><h1>Accompaniment</h1></a>
+                    <p>A food item served with the main component of the meal to provide balance to the dish.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Aeration"><h1>Aeration</h1></a>
+                    <p>Aeration is the process of incorporating air into a food item.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Alternate-drop"><h1>Alternate drop</h1></a>
+                    <p>Two or three different dishes are served alternatively around the table. Guests don't specifically order their dish, but are free to swap with their neighbour if they wish.</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Ballotine"><h1>Ballotine</h1></a>
-                <p>Traditionally, a ballotine is a deboned leg of poultry, stuffed, trussed and cooked. A ballotine is usually cooked by braising or poaching.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Braising">Braising</a></li>
-                        <li><a href="#Poaching">Poaching</a></li>
-                        <li><a href="#Poultry">Poultry</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="B" class="abcd"></a>
+                <h4>B</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <a name="Baking"><h1>Baking</h1></a>
+                    <p>Baking is the process of heating food with hot air, but without the addition of oils.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Oil">Oil</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Ballotine"><h1>Ballotine</h1></a>
+                    <p>Traditionally, a ballotine is a deboned leg of poultry, stuffed, trussed and cooked. A ballotine is usually cooked by braising or poaching.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Braising">Braising</a></li>
+                            <li><a href="#Poaching">Poaching</a></li>
+                            <li><a href="#Poultry">Poultry</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Barding"><h1>Barding</h1></a>
+                    <p>The process of covering a food item in strips of fat while it cooks. The added fat helps keep the food moist, while imparting flavour.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Fat">Fat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Basting"><h1>Basting</h1></a>
+                    <p>A technique where a food item is periodically coated with a sauce, marinade or its own juices during the cooking process. Basting during long cooking processes helps keep the meat moist.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Sauce">Sauce</a></li>
+                            <li><a href="#Marinade">Marinade</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Batter"><h1>Batter</h1></a>
+                    <p>A semi-liquid mixture made by combining dry flours with wet ingredients, such as milk or eggs. The batter is often aerated and flavoured with the addition of other ingredients.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Flour">Flour</a></li>
+                            <li><a href="#Egg">Egg</a></li>
+                            <li><a href="#Aeration">Aeration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Bien-cuit"><h1>Bien cuit</h1></a>
+                    <p>Well done; thoroughly cooked</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Biological-contamination"><h1>Biological contamination</h1></a>
+                    <p>Biological contamination occurs when food is infested with living microorganisms that are able to cause harm if ingested.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Microorganism">Microorganism</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Biscuit"><h1>Biscuit</h1></a>
+                    <p>A small crisp cake made of sweetened dough, rolled and sliced or dropped from a spoon and baked on a flat sheet.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Cake">Cake</a></li>
+                            <li><a href="#Dough">Dough</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Blanching"><h1>Blanching</h1></a>
+                    <p>To partially cook food in boiling water. This is often followed by refreshing.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Refreshing">Refreshing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Blanquette"><h1>Blanquette</h1></a>
+                    <p>A French stew of veal, chicken, or lamb that has been blanched, then cooked in stock, thickened with egg yolks and cream,  and garnished with mushrooms and pearl onions. The sauce is always white.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Veal">Veal</a></li>
+                            <li><a href="#Blanching">Blanching</a></li>
+                            <li><a href="#Sauce">Sauce</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Boning"><h1>Boning</h1></a>
+                    <p>See "Deboning".</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Deboning">Deboning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Braise"><h1>Braise</h1></a>
+                    <p>A cut of meat that has been cooked by braising.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Braising">Braising</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Braising"><h1>Braising</h1></a>
+                    <p>In most cases, braising is performed on whole cuts of meat, but may also be used on woody vegetables and root vegetables. The ingredients in the braise are added to the cooking vessel, then half-covered with the cooking liquid and placed in an oven set to a low to moderate temperature.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Bread"><h1>Bread</h1></a>
+                    <p>Bread is a baked food, usually made from dough of flour and water. Most breads are aerated with yeast to make them soft and light.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Dough">Dough</a></li>
+                            <li><a href="#Flour">Flour</a></li>
+                            <li><a href="#Aeration">Aeration</a></li>
+                            <li><a href="#Yeast">Yeast</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Brining"><h1>Brining</h1></a>
+                    <p>To soak protein-based foods in salted water. The food is usually soaked for 6-12 hours.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Brulee"><h1>Br&ucirc;l&eacute;e</h1></a>
+                    <p>Refers to foods that are sprinkled with sugar and caramelized with a blowtorch, br&ucirc;l&eacute;e iron or salamander, forming a hard brittle top.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Sugar">Sugar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Brunoise"><h1>Brunoise</h1></a>
+                    <p>A kind of cut: Fine dice 2&times;2&times;2mm.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Dice">Dice</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Buffet"><h1>Buffet</h1></a>
+                    <p>A selection of hot and cold food items from each course are made accessible to customers for a fixed fee.</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Barding"><h1>Barding</h1></a>
-                <p>The process of covering a food item in strips of fat while it cooks. The added fat helps keep the food moist while imparting flavour.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Fat">Fat</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="C" class="abcd"></a>
+                <h4>C</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <a name="Cake"><h1>Cake</h1></a>
+                    <p>A mixture usually made of flour, fat, eggs, sugar, liquid, and leavening. Some cakes are fried, but most are baked in an oven.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Baking">Baking</a></li>
+                            <li><a href="#Oven">Oven</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Canape"><h1>Canap&eacute;</h1></a>
+                    <p>Canap&eacute;s are a kind of appetiser. Canap&eacute;s are defined by their hard base, such as a cracker, toasted bread, vol-au-vent or puff pastry. This base is then topped with a flavoursome spread and ingredients.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Vol-au-vent">Vol-au-vent</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Carbohydrate"><h1>Carbohydrate</h1></a>
+                    <p>The body's primary fuel source, and are available as starch or sugar.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Starch">Starch</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Cartouche-action"><h1>Cartouche (action)</h1></a>
+                    <p>To cook foods en papillote, and to prevent loss of moisture during stewing and shallow poaching.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Sugar">Sugar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Cartouche-item"><h1>Cartouche (item)</h1></a>
+                    <p>A circular piece of greaseproof paper used to cover hot liquids as they cool to prevent a skin from forming.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Carving"><h1>Carving</h1></a>
+                    <p>Carving is the process of slicing and portioning a large cut of meat.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Caul"><h1>Caul</h1></a>
+                    <p>The lining around the organs in the internal cavity of most mammals. It can be used to wrap and shape meat-based farces.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Farce">Farce</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Chemical-contamination"><h1>Chemical contamination</h1></a>
+                    <p>Contamination that occurs by food coming into contact with harmful chemicals or toxins.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Chemicals">Chemicals</a></li>
+                            <li><a href="#Toxins">Toxins</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Chemise"><h1>Chemise</h1></a>
+                    <p>To line or coat a mould or an item with jelly or jam.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Jelly">Jelly</a></li>
+                            <li><a href="#Jam">Jam</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Chiffonade"><h1>Chiffonade</h1></a>
+                    <p>A kind of cut: Shredded, 1mm thickness.</p>
+                </div>
+                <div class="gloss-item">
+                    <a name="Choux-paste"><h1>Choux paste</h1></a>
+                    <p>A French paste used for making many pastry products and desserts, including &eacute;clairs & cream puffs. Choux pastry is piped, rather than moulded into shape.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Piping">Piping</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gloss-item">
+                    <a name="Choux-paste"><h1>Choux paste</h1></a>
+                    <p>A French paste used for making many pastry products and desserts, including &eacute;clairs & cream puffs. Choux pastry is piped, rather than moulded into shape.</p>
+                    <div class="seealso">
+                        <h4>See also</h4>
+                        <ul>
+                            <li><a href="#Piping">Piping</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Basting"><h1>Basting</h1></a>
-                <p>A technique where a food item is periodically coated with a sauce, marinade or its own juices during the cooking process. Basting during long cooking processes helps keep the meat moist.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Sauce">Sauce</a></li>
-                        <li><a href="#Marinade">Marinade</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="D" class="abcd"></a>
+                <h4>D</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Batter"><h1>Batter</h1></a>
-                <p>A semi-liquid mixture made by combining dry flours, wet ingredients, such as milk or eggs. The batter is often aerated and flavoured with the addition of other ingredients.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Flour">Flour</a></li>
-                        <li><a href="#Egg">Egg</a></li>
-                        <li><a href="#Aeration">Aeration</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="E" class="abcd"></a>
+                <h4>E</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Bien-cuit"><h1>Bien cuit</h1></a>
-                <p>Well done; thoroughly cooked</p>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="F" class="abcd"></a>
+                <h4>F</h4>
             </div>
-            <div class="gloss-item">
-                <a name="Biological-contamination"><h1>Biological contamination</h1></a>
-                <p>Biological contamination occurs when food is infested with living micro-organisms that are able to cause harm if ingested.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Microorganism">Microorganism</a></li>
-                    </ul>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Biscuit"><h1>Biscuit</h1></a>
-                <p>A small crisp cake made of sweetened dough, rolled and sliced or dropped from a spoon and baked on a flat sheet.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Cake">Cake</a></li>
-                        <li><a href="#Dough">Dough</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="G" class="abcd"></a>
+                <h4>G</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Blanching"><h1>Blanching</h1></a>
-                <p>To partially cook food in boiling water. This is often followed by refreshing.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Refreshing">Refreshing</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="H" class="abcd"></a>
+                <h4>H</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Blanquette"><h1>Blanquette</h1></a>
-                <p>A French stew of veal, chicken or lamb that has been blanched then cooked in stock, thickened with egg yolks and cream, garnished with mushrooms and pearl onions. The sauce is always white.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Veal">Veal</a></li>
-                        <li><a href="#Blanching">Blanching</a></li>
-                        <li><a href="#Sauce">Sauce</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="I" class="abcd"></a>
+                <h4>I</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Boning"><h1>Boning</h1></a>
-                <p>See "Deboning".</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Deboning">Deboning</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="J" class="abcd"></a>
+                <h4>J</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Braise"><h1>Braise</h1></a>
-                <p>A cut of meat that has been cooked by braising.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Braising">Braising</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="K" class="abcd"></a>
+                <h4>K</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Braising"><h1>Braising</h1></a>
-                <p>In most cases, braising is performed on whole cuts of meat, but may also be used on woody vegetables and root vegetables. The ingredients in the braise are added to the cooking vessel, then half covered with the cooking liquid and placed in the oven set to a low to moderate temperature.</p>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="L" class="abcd"></a>
+                <h4>L</h4>
             </div>
-            <div class="gloss-item">
-                <a name="Bread"><h1>Bread</h1></a>
-                <p>Bread is a baked food, usually made from dough of flour and water. Most breads are aerated with yeast to make them soft and light.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Dough">Dough</a></li>
-                        <li><a href="#Flour">Flour</a></li>
-                        <li><a href="#Aeration">Aeration</a></li>
-                        <li><a href="#Yeast">Yeast</a></li>
-                    </ul>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Brining"><h1>Brining</h1></a>
-                <p>To soak protein-based foods in salted water. The food is usually soaked for 6-12 hours.</p>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="M" class="abcd"></a>
+                <h4>M</h4>
             </div>
-            <div class="gloss-item">
-                <a name="Brulee"><h1>Br&ucirc;l&eacute;e</h1></a>
-                <p>Refers to foods that are sprinkled with sugar and caramelized with a blowtorch, br&ucirc;l&eacute;e iron or salamander, forming a hard brittle top.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Sugar">Sugar</a></li>
-                    </ul>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Brunoise"><h1>Brunoise</h1></a>
-                <p>A kind of cut: Fine dice 2&times;2&times;2mm.</p>
-                <div class="seealso">
-                    <h4>See also</h4>
-                    <ul>
-                        <li><a href="#Dice">Dice</a></li>
-                    </ul>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="N" class="abcd"></a>
+                <h4>N</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
                 </div>
             </div>
-            <div class="gloss-item">
-                <a name="Buffet"><h1>Buffet</h1></a>
-                <p>A selection of hot and cold food items from each course are made accessible to customers for a fixed fee.</p>
+        </div>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="O" class="abcd"></a>
+                <h4>O</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="C">C</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="P" class="abcd"></a>
+                <h4>P</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="D">D</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="Q" class="abcd"></a>
+                <h4>Q</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="E">E</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="R" class="abcd"></a>
+                <h4>R</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="F">F</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="S" class="abcd"></a>
+                <h4>S</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="G">G</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="T" class="abcd"></a>
+                <h4>T</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="H">H</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="U" class="abcd"></a>
+                <h4>U</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="I">I</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="V" class="abcd"></a>
+                <h4>V</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="J">J</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="W" class="abcd"></a>
+                <h4>W</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="K">K</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="X" class="abcd"></a>
+                <h4>X</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="L">L</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="Y" class="abcd"></a>
+                <h4>Y</h4>
+            </div>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="M">M</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+        
+        <div class="c-outer">
+            <div class="c-title">
+                <a name="Z" class="abcd"></a>
+                <h4>Z</h4>
             </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="N">N</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="O">O</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="P">P</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="Q">Q</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="R">R</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="S">S</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="T">T</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="U">U</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="V">V</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="W">W</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="X">X</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="Y">Y</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
-            </div>
-        </div>
-    </div>
-    <div class="c-outer">
-        <div class="c-title">
-            <a name="Z">Z</a>
-        </div>
-        <div class="c-inner, gloss">
-            <div class="gloss-item">
-                <p>to come</p>
+            <div class="c-inner, gloss">
+                <div class="gloss-item">
+                    <p>to come</p>
+                </div>
             </div>
         </div>
     </div>

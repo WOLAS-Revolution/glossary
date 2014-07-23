@@ -28,6 +28,15 @@
         });
     });
     </script>
+    <script>
+        $(document).ready(function() {
+            $( "#gindex-tab" ).click(function() {
+                $( "#gloss-index" ).slideToggle( "slow", function() {
+                  // Animation complete.
+                });
+            });
+        });
+    </script>
 </head>
 
 
@@ -41,37 +50,40 @@
     
     <div id="sticker">
 	<div class="c-outer compact" id="gloss-ic">
-        <div id="gloss-index" class="c-inner">
-            <ul>
-                <li><a href=#top>TOP</a></li>
-                <li><a href=#A>A</a></li>
-                <li><a href=#B>B</a></li>
-                <li><a href=#C>C</a></li>
-                <li><a href=#D>D</a></li>
-                <li><a href=#E>E</a></li>
-                <li><a href=#F>F</a></li>
-                <li><a href=#G>G</a></li>
-                <li><a href=#H>H</a></li>
-                <li><a href=#I>I</a></li>
-                <li><a href=#J>J</a></li>
-                <li><a href=#K>K</a></li>
-                <li><a href=#L>L</a></li>
-                <li><a href=#M>M</a></li>
-                <li><a href=#N>N</a></li>
-                <li><a href=#O>O</a></li>
-                <li><a href=#P>P</a></li>
-                <li><a href=#Q>Q</a></li>
-                <li><a href=#R>R</a></li>
-                <li><a href=#S>S</a></li>
-                <li><a href=#T>T</a></li>
-                <li><a href=#U>U</a></li>
-                <li><a href=#V>V</a></li>
-                <li><a href=#W>W</a></li>
-                <li><a href=#X>X</a></li>
-                <li><a href=#Y>Y</a></li>
-                <li><a href=#Z>Z</a></li>
-            </ul>
-        </div>
+            <div id="gloss-index" class="c-inner">
+                <ul>
+                    <li><a href=#top>TOP</a></li>
+                    <li><a href=#A>A</a></li>
+                    <li><a href=#B>B</a></li>
+                    <li><a href=#C>C</a></li>
+                    <li><a href=#D>D</a></li>
+                    <li><a href=#E>E</a></li>
+                    <li><a href=#F>F</a></li>
+                    <li><a href=#G>G</a></li>
+                    <li><a href=#H>H</a></li>
+                    <li><a href=#I>I</a></li>
+                    <li><a href=#J>J</a></li>
+                    <li><a href=#K>K</a></li>
+                    <li><a href=#L>L</a></li>
+                    <li><a href=#M>M</a></li>
+                    <li><a href=#N>N</a></li>
+                    <li><a href=#O>O</a></li>
+                    <li><a href=#P>P</a></li>
+                    <li><a href=#Q>Q</a></li>
+                    <li><a href=#R>R</a></li>
+                    <li><a href=#S>S</a></li>
+                    <li><a href=#T>T</a></li>
+                    <li><a href=#U>U</a></li>
+                    <li><a href=#V>V</a></li>
+                    <li><a href=#W>W</a></li>
+                    <li><a href=#X>X</a></li>
+                    <li><a href=#Y>Y</a></li>
+                    <li><a href=#Z>Z</a></li>
+                </ul>
+            </div>
+            <div id="gindex-tab">
+                <h4>INDEX</h4>
+            </div>
         </div>
     </div>
         
@@ -148,7 +160,7 @@
                     <div class="seealso">
                         <h4>See also</h4>
                         <ul>
-                            <li><a href="#Fat">Fat</a></li>
+                            <li><a href="#Fat-ingredient">Fat (ingredient)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -160,7 +172,7 @@
                         <h4>See also</h4>
                         <ul>
                             <li><a href="#Sauce">Sauce</a></li>
-                            <li><a href="#Marinade">Marinade</a></li>
+                            <li><a href="#Marinating">Marinating</a></li>
                         </ul>
                     </div>
                 </div>
@@ -395,7 +407,7 @@
                         <h4>See also</h4>
                         <ul>
                             <li><a href="#Chemical">Chemical</a></li>
-                            <li><a href="#Toxins">Toxins</a></li>
+                            <li><a href="#Toxin">Toxin</a></li>
                         </ul>
                     </div>
                 </div>
@@ -595,7 +607,7 @@
                     <div class="seealso">
                         <h4>See also</h4>
                         <ul>
-                            <li><a href="#Fat">Fat</a></li>
+                            <li><a href="#Fat-ingredient">Fat (ingredient)</a></li>
                             <li><a href="#Oil">Oil</a></li>
                         </ul>
                     </div>
@@ -653,7 +665,7 @@
                         <h4>See also</h4>
                         <ul>
                             <li><a href="#Flour">Flour</a></li>
-                            <li><a href="#Sauce">Milk</a></li>
+                            <li><a href="#Milk">Milk</a></li>
                             <li><a href="#Bread">Bread</a></li>
                             <li><a href="#Paste">Paste</a></li>
                         </ul>
@@ -690,9 +702,10 @@
                     <div class="seealso">
                         <h4>See also</h4>
                         <ul>
-                            <li><a href="#Cartouche">Cartouche</a></li>
+                            <li><a href="#Cartouche-item">Cartouche (item)</a></li>
                         </ul>
                     </div>
+                </div>
                         <div class="gloss-item">
                         <a name="Equipment" class="tanker"></a>
                         <h1>Equipment</h1>
@@ -721,8 +734,8 @@
                     <div class="seealso">
                         <h4>See also</h4>
                         <ul>
-                            <li><a href="#Trans-fats">Trans-fats</a></li>
-                            <li><a href="#Saturated-fats">Saturated fats</a></li>
+                            <li><a href="#Trans-fat">Trans-fat</a></li>
+                            <li><a href="#Saturated-fat">Saturated fat</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1043,7 +1056,7 @@
                         <ul>
                             <li><a href="#Nutrition">Nutrition</a></li>
                             <li><a href="#Mineral">Mineral</a></li>
-                            <li><a href="#Vitamins">Vitamins</a></li>
+                            <li><a href="#Vitamin">Vitamin</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1111,7 +1124,7 @@
             <div class="c-inner, gloss">
                 <div class="gloss-item">
                     <a name="Oil" class="tanker"></a>
-                    <h1>Nutrition</h1>
+                    <h1>Oil</h1>
                     <p>A substance that is used as a lubricant, a cooking medium or to preserve food. Oils are liquid at room temperature, and are most commonly saturated fats, or unsaturated fats.</p>
                     <div class="seealso">
                         <h4>See also</h4>
@@ -1144,7 +1157,6 @@
                         <h4>See also</h4>
                         <ul>
                             <li><a href="#Dough">Dough</a></li>
-                            <li><a href="#Boiling">Boiling</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1167,7 +1179,7 @@
                         <h4>See also</h4>
                         <ul>
                             <li><a href="#Puff-pastry">Puff pastry</a></li>
-                            <li><a href="#Choux-pastry">Choux pastry</a></li>
+                            <li><a href="#Choux-paste">Choux paste</a></li>
                             <li><a href="#Shortcrust-pastry">Shortcrust pastry</a></li>
                         </ul>
                     </div>
@@ -1233,7 +1245,7 @@
                     <div class="seealso">
                         <h4>See also</h4>
                         <ul>
-                            <li><a href="#Eggs">Eggs</a></li>
+                            <li><a href="#Egg">Egg</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1484,7 +1496,6 @@
                         <h4>See also</h4>
                         <ul>
                             <li><a href="#Shellfish">Shellfish</a></li>
-                            <li><a href="#Corn">Corn</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1608,7 +1619,7 @@
                         <h4>See also</h4>
                         <ul>
                             <li><a href="#FIFO">FIFO</a></li>
-                            <li><a href="#Wastage">Wastage</a></li>
+                            <li><a href="#Waste">Waste</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1630,7 +1641,7 @@
                     <div class="seealso">
                         <h4>See also</h4>
                         <ul>
-                            <li><a href="#Portions">Portions</a></li>
+                            <li><a href="#Portion">Portion</a></li>
                             <li><a href="#Fillet">Fillet</a></li>
                         </ul>
                     </div>

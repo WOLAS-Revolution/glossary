@@ -55,7 +55,7 @@
 }
 
 #sticker {
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     margin-top: -10px;
 }
@@ -92,11 +92,59 @@ a.abcd, a.tanker{
     margin-top: 10em;
 }
 
+#gindex-tab{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    background-color: #3677b5;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+#gindex-tab h4{
+    margin: 0;
+    color: #fff;
+}
+
 
 @media all and (max-width: 1105px) and (min-width: 579px) {
     
     a.abcd, a.tanker{
         top: -135px !important;
+    }
+    
+    .gloss-content{
+        margin-top: 12em;
+    }
+    
+}
+
+
+@media all and (max-width: 578px) {
+
+    #gindex-tab{
+        display: block;
+        bottom: -42px;
+    }
+    
+    #gloss-index{
+        display: none;
+    }
+    
+    #gloss-ic{
+        top: 0;
+        margin-top: 0px;
+        z-index: 101;
+        position: fixed;
+    }
+    
+    #sticker{
+        position: relative;
+    }
+    
+    .gloss-content{
+        margin-top: 0;
     }
     
 }

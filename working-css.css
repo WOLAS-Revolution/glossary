@@ -108,7 +108,7 @@ a.abcd, a.tanker{
 }
 
 
-@media all and (max-width: 1105px) and (min-width: 579px) {
+@media all and (max-width: 1105px) and (min-width: 592px) {
     
     a.abcd, a.tanker{
         top: -135px !important;
@@ -121,7 +121,7 @@ a.abcd, a.tanker{
 }
 
 
-@media all and (max-width: 578px) {
+@media all and (max-width: 592px) {
 
     #gindex-tab{
         display: block;
@@ -150,7 +150,7 @@ a.abcd, a.tanker{
 }
 
 
-@media all and (max-width: 578px) and (min-width: 407px) {
+@media all and (max-width: 592px) and (min-width: 407px) {
     
     a.abcd, a.tanker{
         top: -190px !important;

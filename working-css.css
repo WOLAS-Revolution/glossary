@@ -155,6 +155,10 @@ a.abcd, a.tanker{
     color: #fff;
 }
 
+#gingex-tab:hover{
+    cursor: pointer !important;
+}
+
 
 @media all and (max-width: 1105px) and (min-width: 592px) {
     
@@ -205,6 +209,7 @@ a.abcd, a.tanker{
     
     #glhead{
         margin-top: 50px;
+        margin-left: 5%;
     }
     
     #gltop{

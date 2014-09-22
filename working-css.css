@@ -159,6 +159,11 @@ a.abcd, a.tanker{
     cursor: pointer !important;
 }
 
+.c-outer{
+    border-left: none !important;
+    border-right: none !important;
+}
+
 
 @media all and (max-width: 1105px) and (min-width: 592px) {
     

@@ -1,3 +1,12 @@
+@-viewport, @-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+a{
+    outline: none !important;
+ }
+
 .glossbody{
     padding-top: 0 !important;
 }
@@ -73,6 +82,51 @@
     padding: 0.5em;
 }
 
+.src-inner{
+    padding: 0 10%;
+}
+
+.src-item{
+    display: inline-block;
+    vertical-align: top;
+    margin: 2%;
+    width: 20%;
+    padding-top: 80px;
+    margin-top: -80px;
+    position: relative;
+}
+
+.src-item h1{
+    padding: 20% 10%;
+    text-align: center;
+    font-size: 150% !important;
+    display: block;
+    width: 100%;
+    color: #FFF !important;
+    background-color: #3677b5;
+}
+
+.src-item:target h1{
+    border: 3px solid #d2e2f2;
+}
+
+.src-item:target:after{
+    content: 'Click to view.';
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #d2e2f2;
+    color: #3677b5;
+    padding: 0 5px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+
+.src-item h1:hover{
+    background-color: #538fcc;
+    cursor: pointer !important;
+}
+
 .gloss-item h1{
     color: #3677b5;
 }
@@ -95,7 +149,7 @@
     position: absolute;
 }
 
-#sticker {
+#sticker{
     z-index: 100;
     width: 100%;
     margin-top: -10px;
@@ -155,7 +209,7 @@ a.abcd, a.tanker{
     color: #fff;
 }
 
-#gingex-tab:hover{
+#gindex-tab:hover{
     cursor: pointer !important;
 }
 
@@ -171,12 +225,28 @@ a.abcd, a.tanker{
         top: -135px !important;
     }
     
+    .src-item{
+        padding-top: 135px;
+        margin-top: -135px;
+    }
+    
     .gloss-content{
         margin-top: 12em;
     }
     
+    .src-inner{
+        padding: 5%;
+    }
 }
 
+
+@media all and (max-width: 980px) {
+    
+    .src-item{
+        width: 28%;
+    }
+    
+}
 
 @media all and (max-width: 592px) {
 
@@ -208,8 +278,17 @@ a.abcd, a.tanker{
         top: -22px !important;
     }
     
+    .src-item{
+        padding-top: 22px;
+        margin-top: -22px;
+    }
+    
     .gloss{
         margin: inherit;
+    }
+    
+    .src-inner{
+        padding: 0%;
     }
     
     #glhead{
@@ -233,6 +312,14 @@ a.abcd, a.tanker{
         padding-left: 5%;
     }
     
+    .src-item{
+        width: 45%;
+    }
+    
+    .src-item:target:after{
+        content: 'Tap to view.';
+    }
+    
 }
 
 
@@ -248,6 +335,14 @@ a.abcd, a.tanker{
     
     a.abcd{
         top: -245px !important;
+    }
+    
+    .src-item{
+        width: 96%;
+    }
+    
+    .src-item h1{
+        padding: 10%;
     }
     
 }

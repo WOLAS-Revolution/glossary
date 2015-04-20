@@ -3,30 +3,73 @@
     zoom: 1.0;
 }
 
+h1, h2, h3, h4, h5, h6{
+	margin:15px 0;
+    font-weight: 700;
+}
+
+h1{
+	font-size:200%;
+	line-height:140%
+}
+
+h2{
+	font-size:180%;
+	line-height:140%
+}
+
+h3{
+	font-size:160%
+}
+
+h4{
+	font-size:140%
+}
+
+h5{
+	font-size:120%
+}
+
+h6{
+	font-size:100%
+}
+
 a{
     outline: none !important;
  }
 
 .glossbody{
     padding-top: 0 !important;
+    font-family: "Open Sans", sans-serif;
+    background-color: #EDEDED;
 }
 
 #glhead{
-    margin-left: 2em;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5em 0;
+    color: #2C3E4F;
+    font-size: 400% !important;
 }
 
 #gltop{
-    height: 100px;
-    border-bottom: solid 10px #3677b5;
-    padding: 10px 5%;
-    background-color: #d2e2f2;
+    background-color: #2C3E4F;
+    border-bottom: 1px solid #283847;
+    color: #FFF;
+    padding: 5px 5%;
+    height: 60px !important;
+}
+
+#gltop button{
+    margin-top: 8px;
+    font-size: 105%;
+    font-weight: 700;
 }
 
 #gltop img{
-    height: 80px;
     float: left;
     margin-right: 5%;
-    margin-top: -5px;
     top: 0;
 }
 
@@ -35,12 +78,12 @@ a{
 }
 
 #gloss-index ul{
-    margin: 0 auto;
-    max-width: 77em;
+    margin: 10px auto;
+    max-width: 82em;
     text-align: center;
 }
 
- #gltop ul{
+#gltop ul{
     text-align: center;
     float: left;
 }
@@ -132,7 +175,7 @@ a{
 }
 
 .gloss-item:nth-child(odd){
-    background-color: #f4f4f4;
+    background-color: #eff4fa;
 }
 
 .gloss-item:nth-child(even){
@@ -147,6 +190,12 @@ a{
 #gloss-ic{
     background-color: #d2e2f2;
     position: absolute;
+    min-height: 1px;
+    width: 100%;
+    border: 1px solid #3677b5;
+    float: left;
+    margin: 10px 0px 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 #sticker{
@@ -192,6 +241,20 @@ a.abcd, a.tanker{
     margin-top: 10em;
 }
 
+#footer{
+    width: 100%;
+    background-color: #2C3E4F;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-weight: 700;
+}
+
+#footer img, #footer p{
+    display: inline;
+}
+
 #gindex-tab{
     display: none;
     position: absolute;
@@ -201,7 +264,6 @@ a.abcd, a.tanker{
     padding: 10px;
     border-radius: 0 0 5px 5px;
     right: 10px;
-    border: 1px solid #d2e2f2;
 }
 
 #gindex-tab h4{
@@ -216,6 +278,13 @@ a.abcd, a.tanker{
 .c-outer{
     border-left: none !important;
     border-right: none !important;
+}
+
+.c-title{
+    background-color: #34495E;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 10px;
 }
 
 
@@ -257,6 +326,10 @@ a.abcd, a.tanker{
     
     #gloss-index{
         display: none;
+    }
+    
+    #gloss-index ul{
+        padding: 0 2% !important;
     }
     
     #gloss-ic{

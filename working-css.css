@@ -51,6 +51,24 @@ a{
     margin: 0.5em 0;
     color: #2C3E4F;
     font-size: 400% !important;
+    cursor: default;
+    transition: -webkit-filter 2s ease;
+    transition: filter 2s ease;
+}
+
+#glhead:hover{
+    -webkit-filter: brightness(2);
+    filter: brightness(2);
+}
+
+.gloss-content{
+    transition: -webkit-filter 0.5s ease;
+    transition: filter 0.5s ease;
+}
+
+.sticky-wrapper:hover + .gloss-content{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
 }
 
 #gltop{
